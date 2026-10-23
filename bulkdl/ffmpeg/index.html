@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FFmpeg のソースコード - BulkDL</title>
+<meta name="description" content="BulkDL に含まれる FFmpeg のソースコード">
+<link rel="icon" href="../../bulkdl/icon.png">
+<style>
+:root{--bg:#f7f8fb;--surface:#fff;--text:#1b1f27;--muted:#5b6475;--line:#e3e6ee;--accent:#1F3A5F;--accent-text:#fff;--link:#2a5a9c}
+@media (prefers-color-scheme:dark){:root{--bg:#11151c;--surface:#1a2029;--text:#e7eaf0;--muted:#a3abba;--line:#2c3441;--accent:#9cc0ef;--accent-text:#0d1b2e;--link:#9cc0ef}}
+*{box-sizing:border-box}
+body{margin:0;overflow-wrap:anywhere;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.75;-webkit-text-size-adjust:100%}
+a{color:var(--link)}
+header.site{border-bottom:1px solid var(--line);background:var(--surface)}
+header.site .in,main,footer .in{max-width:860px;margin:0 auto;padding:0 16px}
+header.site .in{display:flex;align-items:center;justify-content:space-between;height:56px}
+header.site a.brand{color:var(--text);text-decoration:none;font-weight:700}
+header.site nav a{margin-left:16px;font-size:.92rem}
+main{padding-top:32px;padding-bottom:48px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .in{padding-top:20px;padding-bottom:28px}
+footer a{color:var(--muted);margin-right:14px}
+h1{font-size:1.7rem;line-height:1.35;margin:.2em 0 .6em}
+h2{font-size:1.2rem;margin:2em 0 .6em;padding-top:.4em;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:.92rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:.5em .7em;vertical-align:top;text-align:left}
+th{background:var(--surface)}
+blockquote{margin:1em 0;padding:.6em 1em;border-left:4px solid var(--line);color:var(--muted)}
+.hero{display:flex;gap:20px;align-items:center;margin-bottom:24px}
+.hero img{width:96px;height:96px;border-radius:22px;flex:none}
+.hero p{margin:.2em 0;color:var(--muted)}
+.badge{display:inline-block;padding:.35em .9em;border-radius:999px;background:var(--accent);color:var(--accent-text);font-weight:600;font-size:.9rem;text-decoration:none}
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;scroll-snap-type:x mandatory}
+.shots img{height:420px;width:auto;border-radius:14px;border:1px solid var(--line);scroll-snap-align:start;flex:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;gap:14px;align-items:center;color:var(--text);text-decoration:none}
+.card img{width:56px;height:56px;border-radius:14px}
+.card small{color:var(--muted);display:block;line-height:1.5}
+ul.links{padding-left:1.2em}
+@media (max-width:560px){h1{font-size:1.4rem}.shots img{height:340px}.hero img{width:72px;height:72px}}
+</style></head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="../../">Ham's Studio</a>
+<nav><a href="../../bulkdl/">BulkDL</a><a href="../../bulkdl/privacy.html">プライバシー</a></nav></div></header>
+<main>
+<h1>FFmpeg のソースコード</h1>
+<p>BulkDL には、動画の詰め替え（remux）のために <a rel="noopener" href="https://ffmpeg.org/">FFmpeg</a> 9.0.2 が含まれています。FFmpeg は <a rel="noopener" href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU 劣等一般公衆利用許諾書（LGPL）2.1 版以降</a>の下で配布されています。</p>
+<p>アプリに含まれる FFmpeg は、次のソースコードとビルドスクリプトから作っています。ソースコードは改変していません。利用者は、FFmpeg を改変したものに差し替えることができます。</p>
+<ul class="links">
+<li><a href="ffmpeg-9.0.2.tar.xz">ffmpeg-9.0.2.tar.xz</a>（FFmpeg 9.0.2 のソースコード）</li>
+<li><a href="build-android.sh">build-android.sh</a>（Android 用のビルドスクリプト。LGPL の構成でビルドします）</li>
+</ul>
+<h2 lang="en">FFmpeg source code</h2>
+<p lang="en">BulkDL includes FFmpeg 9.0.2 for remuxing, licensed under the GNU Lesser General Public License version 2.1 or later. The unmodified source code and the build script used for the app are available above. You may replace FFmpeg with a modified version.</p>
+</main>
+<footer><div class="in">
+<a href="../../bulkdl/privacy.html">プライバシーポリシー</a><a href="../../bulkdl/terms.html">利用規約</a><a href="../../bulkdl/privacy-en.html">Privacy Policy</a><a href="../../bulkdl/terms-en.html">Terms</a><a href="mailto:info.hamsstudio@gmail.com">info.hamsstudio@gmail.com</a>
+<div>© 2026 Ham's Studio</div></div></footer>
+</body></html>
